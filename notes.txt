@@ -1,0 +1,35 @@
+WinSCP
+C:\PeterCloudHD\workspace_4\wct_cms\WebRoot\WEB-INF\classes
+/usr/local/tomcat7/tmp_logic2real/WEB-INF/classes/
+/usr/local/tomcat/wcttool/WEB-INF/classes/
+
+commands
+
+原来的月报，从 28 把资料汇到 150， 每次1000条
+java -cp classes:lib/mysql-connector-java-3.0.11-stable-bin.jar  BICopyDevice ..
+java -cp classes:lib/mysql-connector-java-3.0.11-stable-bin.jar  BIImportDeviceActivate ..
+
+以下为制作回答这个问题的table：Gospel前一周活跃用户的分布，或是山东地区有多少人开机：
+java  -cp classes:lib/mysql-connector-java-3.0.11-stable-bin.jar  ProcessChallengerInfo ..
+  // 汇入 28 开机记录，设备厂商ip地区信息到 tmp_hour 
+java  -cp classes:lib/mysql-connector-java-3.0.11-stable-bin.jar  ProcessTmpHour ..
+  // 处理 tmp_hour 产生每小时的 分厂商地区model 表
+  
+                                       
+8188 查询
+mysql> select wifiInfo, netType, count(*) from t_cloud_device_info_ex group by wifiInfo, netType;
++-----------+----------+----------+
+| wifiInfo  | netType  | count(*) |
++-----------+----------+----------+
+| 0bda:0179 | wired    |       12 |
+| 0bda:0179 | wireless |       23 |
+| 0bda:8176 | wireless |        1 |
+| 0bda:8179 | wired    |        2 |
+| 0bda:8179 | wireless |        1 |
++-----------+----------+----------+
+5 rows in set (0.00 sec)
+
+
+select vendor_code, chipType, software_code, count(*) from tmp_device_info group by vendor_code,chipType, software_code;
+
+

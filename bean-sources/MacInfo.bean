@@ -1,0 +1,13 @@
+package com.wct.report;
+
+=MacInfo,t_cloud_mac_info
+String device_mac
+String chip_code
+int status
+String vid
+int oemId
+String orderNo
+int needVid
+Date createDate
+String chipType
+

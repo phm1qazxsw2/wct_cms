@@ -1,0 +1,10 @@
+package com.wct.vod;
+
+=SrcUrl,source_url
+int *#id
+int episode_id
+int video_id
+String site
+String url
+
+

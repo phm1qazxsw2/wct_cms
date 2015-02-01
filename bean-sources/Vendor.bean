@@ -1,0 +1,12 @@
+package com.wct.report;
+
+=Vendor,t_system_org
+String id
+String name
+String orgType
+String treeCode
+String parentId
+String leaf
+String memo
+String vid
+String vidPlain

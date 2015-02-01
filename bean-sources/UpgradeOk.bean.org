@@ -1,0 +1,19 @@
+package com.wct.report;
+
+=UpgradeOk,t_cloud_softwareinfo
+int *#id
+String chipId
+String mac
+String current_vendorId
+String vendorId
+String md5
+int upgrade_time
+int download_speed
+Date createDate
+
+=
+
+    public String getUpper_mac() {
+    	return mac.toUpperCase();
+    }
+

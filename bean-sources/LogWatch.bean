@@ -1,0 +1,13 @@
+package com.wct.logs;
+
+=LogWatch,log_watch3
+int *#id
+String mac
+String ip
+int secs
+String app
+String video
+String channel
+Date ctime
+
+

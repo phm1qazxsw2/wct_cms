@@ -1,0 +1,8 @@
+package com.wct.vod;
+
+=Channel,channel
+int *#id
+String name
+
+
+

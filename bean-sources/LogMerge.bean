@@ -1,0 +1,19 @@
+package com.wct.logs;
+
+=LogMerge,log_merge
+int *#id
+String mac
+String ip
+Date start
+Date end
+String app
+String video
+String channel
+Date ctime
+
+=
+
+    private boolean do_create ;
+    public void setCreate(boolean do_create) { this.do_create = do_create; }
+
+

@@ -1,0 +1,33 @@
+package com.wct.report;
+
+=ReportDevice,r3_device_login
+int *#id
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+Date ctime
+int count
+int logins
+int type
+
+=
+
+    public static final int TYPE_HOUR   = 1;
+    public static final int TYPE_DAY    = 2;
+    public static final int TYPE_WEEK   = 3;
+    public static final int TYPE_MONTH  = 4;
+    
+    public static final int TYPE_HOUR_FINISH   = 11;
+    public static final int TYPE_DAY_FINISH    = 12;
+    public static final int TYPE_WEEK_FINISH   = 13;
+    public static final int TYPE_MONTH_FINISH  = 14;  
+    
+    public String getVendorName(Object arg)
+    	throws Exception
+    {
+        VendorNameConverter nc = (VendorNameConverter) arg;
+        return nc.getRealname(this.vendor_code);
+    }     

@@ -1,0 +1,9 @@
+package com.wct.report;
+
+=ALi100,ali100
+String device_mac
+int id
+String name
+String mac
+String area
+

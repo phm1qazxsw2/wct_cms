@@ -1,0 +1,84 @@
+地区：
+
+
+getVideos?from=2013-07-01
+   传回更新的资料（自那一日起，分页）
+
+getAllVideos
+   传回所有的资料（分页）
+
+{
+    "total":"2",
+    "videos":[
+    {
+        vid:"11",
+        type:"0",    // 0:电影，1:剧集，2：动漫，3：综艺
+        title:"xxx",
+	desc:"xxx xxx xxx xxxx",
+	pic:"http://xxxx/xxx",
+	pub_date:"2013-06-30",
+	vurl:"http://xxxx/xxxx/xxx",
+        nums:"0",
+	duration:"24012",  // 片长几秒
+	points:"6.2",
+	region:"美国,加拿大",
+        director:"xxxx",
+	actors:"xxx,xxx,xxxx",
+	tags:"动画,动作,惊悚"
+    },
+    {
+        vid:"12",
+        type:"1",    // 0:电影，1:剧集，2：动漫，3：综艺
+        title:"yyy",
+	desc:"yyy yyy yyy yyy",
+	pic:"http://yyyyy/yyy",
+	pub_date:"2013-04-28",
+	vurl:"http://yyyyy/yyyy/yyyy",  // 第一集
+        nums:"50",
+	duration:"17122",  // 片长几秒
+        points:"7.8",
+	region:"美国,加拿大",
+        director:"xxxx",
+	actors:"xxx,xxx,xxxx",
+	tags:"动画,动作,惊悚"
+	
+    }],
+    "more":"3",   // 不是 -1 就还需要继续 call 下页
+}
+
+
+getDramaInfo?vid=12
+
+{
+    "total":"4",
+    "dramas":[
+    {
+        vid:"12",
+	num:1
+	pic:"http://xxxx/xxx",
+	pub_date:"2013-01-01",
+	vurl:"http://xxxx/xxxx/xxx"
+    },
+    {
+        vid:"52",
+	num:2
+	pic:"http://yyyyy/yyy",
+	pub_date:"2013-04-28",
+	vurl:"http://yyyyy/yyyy/yyyy"
+    },
+    {
+        vid:"53",
+	num:3
+	pic:"http://xxxx/xxx",
+	pub_date:"2013-01-01",
+	vurl:"http://xxxx/xxxx/xxx"
+    },
+    {
+        vid:"54",
+	num:4
+	pic:"http://xxxx/xxx",
+	pub_date:"2013-01-01",
+	vurl:"http://xxxx/xxxx/xxx"
+    }]
+
+}

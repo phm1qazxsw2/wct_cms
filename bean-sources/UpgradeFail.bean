@@ -1,0 +1,17 @@
+package com.wct.report;
+
+=UpgradeFail,t_cloud_updatefailinfo
+int *#id
+String mac
+String curSoftware
+String toSoftware
+int flow
+Date createDate
+String errorCode
+
+=
+
+    public String getUpper_mac() {
+    	return mac.toUpperCase();
+    }
+

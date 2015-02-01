@@ -1,0 +1,6 @@
+package com.wct.report;
+
+=RandioQR,randio_qr_scan
+int *#id
+String ip
+Date ctime

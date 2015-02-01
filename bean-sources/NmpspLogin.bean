@@ -1,0 +1,6 @@
+
+=NmpspLogin,t_cloud_challenger_info
+int *#id
+String device_mac
+Date challenger_times_date
+

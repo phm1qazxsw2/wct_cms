@@ -1,0 +1,9 @@
+package com.wct.report;
+
+=TChallenger,t_cloud_challenger_info
+int *#id
+String device_mac
+String device_ip
+Date challenger_times_date
+String software_code
+String vendor_code

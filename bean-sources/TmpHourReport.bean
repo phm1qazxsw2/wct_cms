@@ -1,0 +1,11 @@
+package com.wct.report;
+
+=TmpHourReport,tmp_hour2
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+int count
+int sum

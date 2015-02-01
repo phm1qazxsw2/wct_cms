@@ -1,0 +1,8 @@
+package com.wct.logs;
+
+=LogUrl,log_url
+int *#id
+int type
+String md5
+String url
+

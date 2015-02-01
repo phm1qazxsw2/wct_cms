@@ -1,0 +1,13 @@
+package com.wct.report;
+
+=IpInfo,t_cloud_ip_info
+int *#id
+String begIp
+String endIp
+String country
+String province
+String city
+String region
+String communications
+long begIpNum
+long endIpNum

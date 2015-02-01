@@ -1,0 +1,13 @@
+package com.wct.report;
+
+=VideoLog,##
+String videoUrl
+int pageview
+int visit
+Date createDate
+
+=
+	private static java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd"); 
+    public String getKey() {
+    	return this.videoUrl + "#" + sdf.format(this.createDate);
+    }

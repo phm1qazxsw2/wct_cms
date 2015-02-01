@@ -1,0 +1,33 @@
+package com.phm.smart;
+
+=User,peter_user
+int *#id
+String phone
+String jpush_id
+String uuid
+Date u_time
+
+=
+
+    public static User getUserWithUuid(String uuid, String db_src) 
+    	throws Exception
+    {
+    	if (uuid==null || uuid.length()==0)
+    		return null;    	
+    	UserMgr umgr = new UserMgr(0);
+		umgr.setSource(db_src);
+		
+		return umgr.find("uuid='" + uuid + "'");		
+    }
+
+    public static User createUserWithUuid(String uuid, String db_src) 
+		throws Exception
+    {
+    	UserMgr umgr = new UserMgr(0);
+		umgr.setSource(db_src);
+    	User u = new User();
+    	u.setUuid(uuid);
+    	u.setU_time(new java.util.Date());
+    	umgr.create(u);
+    	return u;
+    }

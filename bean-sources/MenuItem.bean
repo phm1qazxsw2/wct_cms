@@ -1,0 +1,8 @@
+package com.wct.vod;
+
+=MenuItem,
+int id
+String name
+int hidden
+
+

@@ -1,0 +1,13 @@
+package com.wct.report;
+
+=TmpDeviceLogin,tmp_device_login
+int *#id
+String device_mac
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+Date slottime
+int slottype
+int count

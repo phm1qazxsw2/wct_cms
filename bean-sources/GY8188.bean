@@ -1,0 +1,19 @@
+package com.wct.report;
+
+=GY8188,t_cloud_device_info_ex
+int *#id
+String chipId
+String wifiInfo
+Date buildDate
+String netType
+Date createTime
+
+=
+
+    private String vendor;
+    public void setVendor(String v) { vendor=v; };
+    public String getVendor() { return vendor; }
+    
+    private String software_code;
+    public void setSoftware_code(String v) { software_code=v; };
+    public String getSoftware_code() { return software_code; }

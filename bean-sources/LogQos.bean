@@ -1,0 +1,19 @@
+package com.wct.logs;
+
+=LogQos,log_qos
+int *#id
+int event
+int macId
+int ipId
+Date ctime
+int orgUrlId
+int urlId
+int videoId
+int totalTime
+int startTime
+int playTime
+int startType
+int startStatus
+int bufferNum
+int bufferTime
+

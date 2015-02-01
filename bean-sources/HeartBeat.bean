@@ -1,0 +1,12 @@
+package com.wct.report;
+
+=HeartBeat,t_cloud_online_info
+int *#id
+String chip_code
+String software_code
+String vendor_code
+String device_mac
+String device_ip
+String info
+Date active_times_date
+String vid

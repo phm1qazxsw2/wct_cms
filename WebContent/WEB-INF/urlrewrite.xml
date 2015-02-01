@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+
+<urlrewrite>
+
+	<rule>
+        <from>/ali/demo$</from>
+        <to>/WEB-INF/api/ali_demo.jsp</to>
+    </rule>
+    <rule>
+        <from>/ali/service$</from>
+        <to>/WEB-INF/api/ali_service.jsp</to>
+    </rule>
+    <rule>
+        <from>/ali/video/service$</from>
+        <to>/WEB-INF/api/ali_video_service.jsp</to>
+    </rule>
+	<rule>
+        <from>/cms/(\w+)$</from>
+        <to>/WEB-INF/cms/$1.jsp</to>
+    </rule>
+    <rule>
+        <from>/cms/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/cms/$1_$2.jsp</to>
+    </rule>
+    <rule>
+        <from>/cms/(\w+)/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/cms/$1_$2_$3.jsp</to>
+    </rule>
+	<rule>
+        <from>/report/(\w+)$</from>
+        <to>/WEB-INF/report/$1.jsp</to>
+    </rule>
+    <rule>
+        <from>/report/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/report/$1_$2.jsp</to>
+    </rule>
+    <rule>
+        <from>/util/(\w+)$</from>
+        <to>/WEB-INF/util/$1.jsp</to>
+    </rule>
+    <rule>
+        <from>/util/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/util/$1_$2.jsp</to>
+    </rule>
+    <rule>
+        <from>/util/(\w+)/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/util/$1_$2_$3.jsp</to>
+    </rule>
+    <rule>
+        <from>/logging/(\w+)$</from>
+        <to>/WEB-INF/logv2/$1.jsp</to>
+    </rule>
+    <rule>
+        <from>/logging/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/logv2/$1_$2.jsp</to>
+    </rule>
+    <rule>
+        <from>/logging/(\w+)/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/logv2/$1_$2_$3.jsp</to>
+    </rule>  
+	<rule>
+        <from>/smart/(\w+)$</from>
+        <to>/WEB-INF/smart/$1.jsp</to>
+    </rule>
+    <rule>
+        <from>/smart/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/smart/$1_$2.jsp</to>
+    </rule>
+    <rule>
+        <from>/smart/(\w+)/(\w+)/(\w+)$</from>
+        <to>/WEB-INF/smart/$1_$2_$3.jsp</to>
+    </rule>     
+</urlrewrite>

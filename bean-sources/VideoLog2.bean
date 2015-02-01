@@ -1,0 +1,10 @@
+package com.wct.report;
+
+=VideoLog2,vod_video_log
+int *#id
+String videoUrl
+String videoFeature
+String videoType
+String ip
+String appName
+Date createTime

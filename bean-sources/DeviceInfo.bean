@@ -1,0 +1,22 @@
+package com.wct.report;
+
+=DeviceInfo,t_cloud_device_info
+int *#device_id
+String chip_code
+String software_code
+String vendor_code
+int channel_code
+int is_enabled
+Date enabled_date
+String device_ip
+String device_mac
+int region_id
+int status
+String secrect_key
+Date create_date
+Date update_date
+String board_code
+int created_by
+int activate_times
+Date challenger_times_date
+

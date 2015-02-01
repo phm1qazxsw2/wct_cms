@@ -1,0 +1,26 @@
+package com.wct.report;
+
+=ReportDeviceActivate,r2_device_activate
+int *#id
+String vendor_code
+String chipType
+String software_code
+Date ctime
+int count
+int type
+
+=
+
+    public String getVendorName(Object arg)
+    	throws Exception
+    {
+        VendorNameConverter nc = (VendorNameConverter) arg;
+        return nc.getRealname(this.vendor_code);
+    }
+    
+    public String getVer() {
+		int c = software_code.lastIndexOf(".");
+		if (c<0)
+			return software_code;
+		return software_code.substring(0, c);
+    }

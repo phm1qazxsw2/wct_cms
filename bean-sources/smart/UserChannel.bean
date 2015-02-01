@@ -1,0 +1,9 @@
+package com.phm.smart;
+
+=UserChannel,peter_user_channel
+int *#id
+int user_id
+int channel_id
+String subtitle
+int unread
+

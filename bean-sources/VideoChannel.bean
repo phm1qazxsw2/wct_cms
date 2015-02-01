@@ -1,0 +1,7 @@
+package com.wct.vod;
+
+=VideoChannel,video_channel
+int *#id
+int video_id
+int channel_id
+

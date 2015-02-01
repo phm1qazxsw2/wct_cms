@@ -1,0 +1,6 @@
+
+=BIDevice,bi_device_login
+int *#id
+String mac
+Date loginDate
+String ip

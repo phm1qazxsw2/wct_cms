@@ -1,0 +1,51 @@
+package com.wct.report;
+
+=ReportAppUsage,r3_app_usage
+int *#id
+String appName
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+Date ctime
+long seconds
+int type
+
+=
+
+    public static final int TYPE_HOUR   = 1;
+    public static final int TYPE_DAY    = 2;
+    public static final int TYPE_WEEK   = 3;
+    public static final int TYPE_MONTH  = 4;
+    
+    private static java.text.SimpleDateFormat sdf =  new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    
+    public String getKey() {
+    	StringBuffer sb = new StringBuffer();
+        sb.append(appName).append("#").append(vendor_code).append("#").append(chipType);
+        sb.append("#").append(software_code).append("#").append(province).append("#").append(city).append("#");
+        sb.append(communications).append("#").append(sdf.format(ctime));
+        return sb.toString();
+    }
+    
+    public String getKeyIdentifier() {
+    	StringBuffer sb = new StringBuffer();
+        sb.append("appName='").append(appName).append("'");
+        sb.append(" and ");
+        sb.append("vendor_code='").append(vendor_code).append("'");
+        sb.append(" and ");
+        sb.append("chipType='").append(chipType).append("'");
+        sb.append(" and ");
+        sb.append("software_code='").append(software_code).append("'");
+        sb.append(" and ");
+        sb.append("province='").append(province).append("'");
+        sb.append(" and ");
+        sb.append("city='").append(city).append("'");
+        sb.append(" and ");
+        sb.append("communications='").append(communications).append("'");
+        sb.append(" and ");
+        sb.append("ctime='").append(sdf.format(ctime)).append("'");
+        return sb.toString();
+    }

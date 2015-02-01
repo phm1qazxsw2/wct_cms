@@ -1,0 +1,4 @@
+main=org.gjt.mm.mysql.Driver,jdbc:mysql://localhost:3306/smart,root,,3
+db152=org.gjt.mm.mysql.Driver,jdbc:mysql://localhost:3306/smart,root,,3
+
+

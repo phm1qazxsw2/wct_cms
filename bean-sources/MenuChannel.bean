@@ -1,0 +1,7 @@
+package com.wct.vod;
+
+=MenuChannel,menu_channel
+int *#id
+int menu_id
+int channel_id
+

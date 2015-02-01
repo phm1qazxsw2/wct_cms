@@ -1,0 +1,37 @@
+package com.wct.vod;
+
+=Video,video
+int *#id
+String key
+Date updated
+String name
+String pic
+int type
+int check_new
+int episode_num
+String short_desc
+String long_desc
+String area
+String director
+String actor
+String hao123url
+int year
+
+=
+
+    public static final int TYPE_MOVIE = 1;
+    public static final int TYPE_DRAMA = 2;
+    public static final int TYPE_ENTERTAINMENT = 3;
+    public static final int TYPE_ANIMATION = 4;
+    
+    public String getTypeName() {
+        switch (this.type) {
+        case TYPE_MOVIE: return "电影";
+        case TYPE_DRAMA: return "电视剧";
+        case TYPE_ENTERTAINMENT: return "综艺";
+        case TYPE_ANIMATION: return "动漫";
+        }
+        return "";
+    }
+    
+

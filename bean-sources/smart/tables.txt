@@ -1,0 +1,76 @@
+CREATE TABLE `peter_test_push` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(50) DEFAULT NULL,
+  `token` varchar(80) DEFAULT NULL,
+  `type` tinyint(4) DEFAULT NULL,
+  `u_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `IX_1` (`uuid`),
+  UNIQUE KEY `IX_2` (`token`)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `peter_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phone` varchar(13),
+  `uuid` varchar(50),
+  `jpush_id` varchar(13),
+  `u_time` DATETIME,
+  PRIMARY KEY (`id`),
+  UNIQUE UX1(`uuid`),
+  INDEX IX1(`jpush_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+insert into `peter_user` (id, phone, uuid) values (1, '0921120329', '704342CF-250A-4718-B73B-D7BF7FA3296D');
+
+CREATE TABLE `peter_channel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(13),
+  `icon` varchar(100),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+insert into `peter_channel` (id, name, icon) values (1, '惠文幼兒園', 'img/school1.png');
+insert into `peter_channel` (id, name, icon) values (2, '惠文安親班', 'img/school2.jpeg');
+
+ CREATE TABLE `peter_user_channel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11),
+  `channel_id` int(11),
+  `subtitle` varchar(13),
+  `unread` int(5),
+  PRIMARY KEY (`id`),
+  INDEX IX1(`user_id`,`channel_id`),
+  INDEX IX2(`user_id`),
+  INDEX IX3(`channel_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+insert into `peter_user_channel` (id, user_id, channel_id, subtitle) values (1, 1, 1, '大寶-惠文幼兒園');
+insert into `peter_user_channel` (id, user_id, channel_id, subtitle) values (2, 1, 2, '大寶-惠文安親園');
+
+ CREATE TABLE `peter_message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `channel_id` int(11),
+  `created` DATETIME,
+  `title` varchar(50),
+  `text` mediumtext,
+  PRIMARY KEY (`id`),
+  INDEX IX1(`channel_id`),
+  INDEX IX2(`created`)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+insert into `peter_message` (id, channel_id, created, title, text) values (1, 1, '2015-01-20 15:30:05', '運動會', '明天學校運動會,歡迎各位家長蒞臨參加');
+insert into `peter_message` (id, channel_id, created, title, text) values (2, 1, '2015-01-21 16:30:05', '木姐會', '明天學校木姐會,歡迎各位家長蒞臨參加');
+insert into `peter_message` (id, channel_id, created, title, text) values (3, 1, '2015-01-22 16:30:05', '校外教學', '明天學校校外教學,歡迎各位家長蒞臨參加');
+insert into `peter_message` (id, channel_id, created, title, text) values (4, 2, '2015-01-20 16:30:05', '午餐', '午餐 三明治');
+
+CREATE TABLE `peter_user_message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11),
+  `message_id` int(11),
+  `last_read` DATETIME,
+  PRIMARY KEY (`id`),
+  INDEX IX1(`user_id`),
+  INDEX IX2(`message_id`),
+  INDEX IX3(`last_read`)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;

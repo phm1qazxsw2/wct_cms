@@ -1,0 +1,9 @@
+package com.phm.smart;
+
+=Message,peter_message
+int *#id
+int channel_id
+String title
+String text
+Date created
+

@@ -1,0 +1,9 @@
+package com.phm.smart;
+
+=UserMessage,peter_user_message
+int *#id
+int user_id
+int message_id
+Date last_read
+
+

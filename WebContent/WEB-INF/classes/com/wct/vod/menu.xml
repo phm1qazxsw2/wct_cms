@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<model class="MyPlayer">
+		<container class="" id="7" name="MyPlayer首页"/>
+		<container class="" id="8" name="超清热播"/>
+		<container class="movie" id="1" name="电影">
+			<item id="105" name="高清热播"/>
+			<item id="101" name="动作"/>
+			<item id="102" name="悬疑"/>
+			<item id="103" name="爱情"/>
+			<item id="104" name="喜剧"/>
+		</container>
+		<container class="drama" id="2" name="电视剧">
+			<item id="205" name="热播"/>
+			<item id="201" name="时装"/>
+			<item id="202" name="历史"/>
+			<item id="203" name="军事"/>
+			<item id="204" name="古装"/>
+		</container>
+		<container class="entertainment" id="3" name="综艺">
+			<item id="305" name="热播"/>
+			<item id="301" name="娱乐"/>
+			<item id="302" name="访谈"/>
+			<item id="303" name="音乐"/>
+			<item id="304" name="生活"/>
+		</container>
+		<container class="animation" id="4" name="动漫">
+			<item id="401" name="热血"/>
+			<item id="402" name="恋爱"/>
+			<item id="403" name="校园"/>
+			<item id="404" name="搞笑"/>
+		</container>
+		<item class="hidden" id="5" name="首页推荐"/>
+		<item class="hidden" id="6" name="内页推荐"/>
+	</model>
+	<model class="NIFE">
+		<container class="movie" id="10" name="电影">
+			<item id="1005" name="高清热播"/>
+			<item id="1001" name="动作"/>
+			<item id="1002" name="悬疑"/>
+			<item id="1003" name="爱情"/>
+			<item id="1004" name="喜剧"/>
+		</container>
+		<container class="drama" id="11" name="电视剧">
+			<item id="1105" name="高清热播"/>
+			<item id="1101" name="时装"/>
+			<item id="1102" name="历史"/>
+			<item id="1103" name="军事"/>
+			<item id="1104" name="古装"/>
+		</container>
+		<container class="entertainment" id="12" name="综艺">
+			<item id="1205" name="高清热播"/>
+			<item id="1201" name="娱乐"/>
+			<item id="1202" name="访谈"/>
+			<item id="1203" name="音乐"/>
+			<item id="1204" name="生活"/>
+		</container>
+		<container class="animation" id="13" name="动漫">
+			<item id="1301" name="热血"/>
+			<item id="1302" name="恋爱"/>
+			<item id="1303" name="校园"/>
+			<item id="1304" name="搞笑"/>
+		</container>
+		<item class="hidden" id="14" name="精心推荐" />
+	</model>
+</menu>
+
+<!--
+myplayer 多首页推荐和内页推荐
+nife 精心推荐
+-->

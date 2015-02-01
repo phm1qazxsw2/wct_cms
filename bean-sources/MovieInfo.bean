@@ -1,0 +1,7 @@
+package com.wct.report;
+
+=MovieInfo,t_movie_info
+int *#id
+String name
+String url
+String type

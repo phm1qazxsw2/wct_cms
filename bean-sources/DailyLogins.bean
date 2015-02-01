@@ -1,0 +1,15 @@
+package com.wct.report;
+
+=DailyLogins,r3_daily_logins
+int *#id
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+int count
+int logins
+int times
+Date ctime
+

@@ -1,0 +1,128 @@
+{
+    "ret": 0,
+    "data": [
+        {
+            "event": "IN_IMS_CHANNEL",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/in_vod?event=${event}&app=${app}&mac=${mac}&video=${video}"
+                }
+            ],
+            "confs": {
+                "ei": "180",
+                "ni": "86400"
+            }
+        },
+        {
+            "event": "IN_LUNBO",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/in_vod?event=${event}&mac=${mac}&channel=${channel}&video=${video}"
+                }
+            ],
+            "confs": {
+                "ei": "180",
+                "ni": "86400"
+            }
+        },
+        {
+            "event": "IN_VOD",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url":"http://logx.widecloud.com.cn/wcttool/logging/in_vod?event=${event}&mac=${mac}&app=${app}&channel=${channel}&video=${video}&no=${no}"
+                }
+            ],
+            "confs": {
+                "ei": "180",
+                "ni": "86400"
+            }
+        },
+        {
+            "event" : "IMS_PLAY_QOS",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/qos2?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&app=${app}&url=${url}&urlId=${urlId}&channel=${channel}&video=${video}&no=${no}&totalTime=${totalTime}&startTime=${startTime}&playTime=${playTime}&startType=${startType}&startStatus=${startStatus}&bufferNum=${bufferNum}&bufferTime=${bufferTime}&app=${app}"
+                },
+                {
+                    "url": "http://logx.widecloud.com.cn:8181/sas/app/read/readLog?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&app=${app}&url=${url}&urlId=${urlId}&channel=${channel}&video=${video}&no=${no}&totalTime=${totalTime}&startTime=${startTime}&playTime=${playTime}&startType=${startType}&startStatus=${startStatus}&bufferNum=${bufferNum}&bufferTime=${bufferTime}&app=${app}"
+                }
+            ]
+        },
+        {
+            "event" : "VOD_PLAY_QOS",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/qos2?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&app=${app}&url=${url}&urlId=${urlId}&channel=${channel}&video=${video}&no=${no}&totalTime=${totalTime}&startTime=${startTime}&playTime=${playTime}&startType=${startType}&startStatus=${startStatus}&bufferNum=${bufferNum}&bufferTime=${bufferTime}&app=${app}"
+                },
+                {
+                    "url": "http://logx.widecloud.com.cn:8181/sas/app/read/readLog?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&app=${app}&url=${url}&urlId=${urlId}&channel=${channel}&video=${video}&no=${no}&totalTime=${totalTime}&startTime=${startTime}&playTime=${playTime}&startType=${startType}&startStatus=${startStatus}&bufferNum=${bufferNum}&bufferTime=${bufferTime}&app=${app}"
+                }
+            ]
+        },
+        {
+            "event" : "VOD_POSTER_ENTERED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/vod_poster?event=VOD_POSTER_ENTERED&mac=${mac}&vid=${vid}&chipType=${chipType}&menu1=${menu1}&app=${app}&menu2=${menu2}&page=${page}"
+                }
+            ],
+            "confs" : {
+                "duration" : "5"
+            }
+        },
+        {
+            "event" : "AD_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/show_ad?&mac=${mac}&vid=${vid}&ad_id=${ad_id}&adtype=${adtype}&url=${url}&duration=${duration}"
+                }
+            ]
+        },
+        {
+            "event" : "CHANNEL_ENTERED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://www.google-analytics.com/collect?v=1&tid=UA-49240218-6&cid=${mac}&t=pageview&dp=%2F${via_num}%2F${channel}"
+                }
+            ],
+            "confs" : {
+                "duration" : "20"
+            }
+        },
+        {
+            "event" : "VAST_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/show_vast?event=VAST_DISPLAYED&mac=${mac}&vid=${vid}&vast_id=${vast_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VAST_INPUT_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/show_vast?event=VAST_INPUT_DISPLAYED&mac=${mac}&vid=${vid}&vast_id=${vast_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VAST_SUBMITTED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logx.widecloud.com.cn/wcttool/logging/show_vast?event=VAST_SUBMITTED&mac=${mac}&vid=${vid}&vast_id=${vast_id}"
+                }
+            ]
+        }       
+    ]
+}

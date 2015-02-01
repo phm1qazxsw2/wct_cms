@@ -1,0 +1,8 @@
+package com.wct.vod;
+
+=Episode,episode
+int *#id
+int video_id
+String name
+String num
+

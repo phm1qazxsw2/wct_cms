@@ -1,0 +1,9 @@
+package com.wct.report;
+
+=TmpDevice,tmp_device_info
+int *#id
+String software_code
+String vendor_code
+String device_mac
+String chipType
+Date activate_time

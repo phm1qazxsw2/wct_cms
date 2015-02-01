@@ -1,0 +1,13 @@
+package com.wct.report;
+
+=RandioQrScan,randio_qr_scan
+int *#id
+String ip
+Date ctime
+int type
+
+=
+
+    public final static int TYPE_RANDIO = 0;
+    public final static int TYPE_REDBULL = 11;
+    public final static int TYPE_GAME1 = 12;

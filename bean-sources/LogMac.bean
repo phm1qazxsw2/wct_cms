@@ -1,0 +1,5 @@
+package com.wct.logs;
+
+=LogMac,log_mac
+int *#id
+String mac

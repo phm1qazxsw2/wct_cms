@@ -1,0 +1,6 @@
+package com.wct.logs;
+
+=LogVideo,log_video
+int *#id
+int app
+String name

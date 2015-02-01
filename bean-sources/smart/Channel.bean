@@ -1,0 +1,6 @@
+package com.phm.smart;
+
+=Channel,peter_channel
+int *#id
+String name
+String icon

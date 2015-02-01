@@ -1,0 +1,9 @@
+package com.wct.ad;
+
+=AdCollect,ad_collect
+int *#id
+String ad_ids
+int ad_id
+int last_record_id
+String reporting_urls
+

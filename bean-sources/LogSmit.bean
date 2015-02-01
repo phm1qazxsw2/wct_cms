@@ -1,0 +1,11 @@
+package com.wct.logs;
+
+=LogSmit,log_smit
+int *#id
+String mac
+String ip
+int secs
+String video
+Date ctime
+
+

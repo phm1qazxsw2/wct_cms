@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="bean2code" default="compile">
+	<property name="src" value="src" />
+	<property name="classes" value="WebContent/WEB-INF/classes" />
+	<property name="lib" value="WebContent/WEB-INF/lib" />
+	<property name="debug" value="on" />
+
+	<target name="compile" >
+		<javac srcdir="${src}"
+			   destdir="${classes}"
+			   debug="${debug}"
+			   source="1.6"
+			   target="1.6"
+			   encoding="UTF-8">
+			<classpath>
+				<pathelement path="${classes}"/>
+				<fileset dir="${lib}">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+					
+	<target name="bean2code">
+		<java classname="dbo.BeanGenerator">
+			<arg value="bean-sources/smart/Channel.bean" />
+			<arg value="${src}/com/phm/smart" />
+			<classpath>
+				<pathelement path="${classes}" />
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="bean2code2">
+		<java classname="dbo.BeanGenerator">
+			<arg value="bean-sources/User.bean" />
+			<arg value="${src}/api" />
+			<classpath>
+				<pathelement path="${classes}" />
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>	
+	
+	<target name="monitor">
+		<java classname="moniting.VodMonitor">
+			<classpath>
+				<pathelement path="${classes}" />
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>	
+		
+    <target name="weibov1">
+        <delete file="../yvent/WebRoot/WEB-INF/lib/weibo_v1.jar"/>
+        <jar destfile="../yvent/WebRoot/WEB-INF/lib/weibo_v1.jar" 
+                basedir="${classes}" 
+                includes="weibo4j_v1/**/*.class"
+        />
+    </target>	
+    <target name="connect">
+        <delete file="../yvent/WebRoot/WEB-INF/lib/social_connect.jar"/>
+        <jar destfile="../yvent/WebRoot/WEB-INF/lib/social_connect.jar" 
+                basedir="${classes}" 
+                includes="com/eeplat/**/*.class,com/renren/**/*.class,org/json/**/*"
+        />
+    </target>	
+</project>

@@ -1,0 +1,5 @@
+package com.wct.logs;
+
+=LogMergeId,log_merge_id
+int *#id
+int last_id

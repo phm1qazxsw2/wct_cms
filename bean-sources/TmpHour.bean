@@ -1,0 +1,14 @@
+package com.wct.report;
+
+=TmpHour,tmp_hour2
+int *#id
+String device_mac
+String device_ip
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+Date ctime
+int count

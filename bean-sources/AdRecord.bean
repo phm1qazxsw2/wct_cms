@@ -1,0 +1,9 @@
+package com.wct.ad;
+
+=AdRecord,t_cloud_ad_advert_record
+int *#id
+String device_code
+String device_ip
+int ad_id
+Date advert_time
+int counts

@@ -1,0 +1,10 @@
+package com.wct.report;
+
+=AppLog,t_cloud_appactionlog
+int *#id
+String chipId
+String mac
+String appName
+Date enterTime
+Date leaveTime
+Date createTime

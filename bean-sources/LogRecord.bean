@@ -1,0 +1,9 @@
+package com.wct.logs;
+
+=LogRecord,log_record
+int *#id
+int event
+int macId
+int ipId
+Date ctime
+int videoId

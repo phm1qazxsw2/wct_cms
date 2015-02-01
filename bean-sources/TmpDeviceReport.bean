@@ -1,0 +1,8 @@
+package com.wct.report;
+
+=TmpDeviceReport,tmp_device
+String vendor_code
+String chipType
+String software_code
+int count
+

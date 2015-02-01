@@ -1,0 +1,173 @@
+{
+    "ret": 0,
+    "data": [
+        {
+            "event" : "DEVICE_LOGIN",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=DEVICE_LOGIN&mac=${mac}&vid=${vid}&chipType=${chipType}"
+                }
+            ]
+        }, 
+        {
+            "event" : "RC_PRESSED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=RC_PRESSED&mac=${mac}&vid=${vid}&chipType=${chipType}"
+                }
+            ],
+            "confs" : {
+                "duration" : "30"
+            }
+        }, 
+        {
+            "event": "IN_IMS_CHANNEL",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&video=${video}"
+                },
+                {
+                    "url": "http://www.google-analytics.com/collect?v=1&tid=UA-50405460-1&cid=${mac}&t=pageview&dp=%2Fims%2F${video}"
+                }
+            ],
+            "confs": {
+                "ei": "30",
+                "ni": "240"
+            }
+        },
+        {
+            "event": "IN_LUNBO",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&video=${video}&channel=${channel}"
+                },
+                {
+                    "url": "http://www.google-analytics.com/collect?v=1&tid=UA-50405460-1&cid=${mac}&t=pageview&dp=%2Flunbo%2F${channel}%2F${video}"
+                }
+            ],
+            "confs": {
+                "ei": "30",
+                "ni": "240"
+            }
+        },
+        {
+            "event": "IN_VOD",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&video=${video}&app=${app}&no=${no}&channel=${channel}"
+                },
+                {
+                    "url": "http://www.google-analytics.com/collect?v=1&tid=UA-50405460-1&cid=${mac}&t=pageview&dp=%2Fvod%2F${app}%2F${video}?${no}"
+                }
+            ],
+            "confs": {
+                "ei": "30",
+                "ni": "240"
+            }
+        }, 
+        {
+            "event": "VOD_INFO_ENTERED",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VOD_INFO_ENTERED&mac=${mac}&vid=${vid}&chipType=${chipType}&video=${video}&app=${app}&no=${no}&channel=${channel}"
+                }
+            ] 
+        },
+        {
+            "event": "VOD_PLAYED",
+            "switch": "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VOD_PLAYED&mac=${mac}&vid=${vid}&chipType=${chipType}&video=${video}&app=${app}&no=${no}&channel=${channel}"
+                }
+            ] 
+        },
+        {
+            "event" : "VOD_MENU2_ENTERED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VOD_MENU2_ENTERED&mac=${mac}&vid=${vid}&chipType=${chipType}&menu1=${menu1}&app=${app}&menu2=${menu2}"
+                }
+            ], 
+            "confs" : {
+                "duration" : "5"
+            }
+        },
+        {
+            "event" : "VOD_POSTER_ENTERED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VOD_POSTER_ENTERED&mac=${mac}&vid=${vid}&chipType=${chipType}&menu1=${menu1}&app=${app}&menu2=${menu2}&page=${page}"
+                }
+            ],
+            "confs" : {
+                "duration" : "5"
+            }
+        },
+        {
+            "event" : "CHANNEL_ENTERED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=CHANNEL_ENTERED&mac=${mac}&vid=${vid}&chipType=${chipType}&menu1=${menu1}&app=${app}&menu2=${menu2}"
+                }
+            ],
+            "confs" : {
+                "duration" : "10"
+            }
+        },
+        {
+            "event" : "AD_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=AD_DISPLAYED&mac=${mac}&vid=${vid}&chipType=${chipType}&ad_id=${ad_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VAST_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VAST_DISPLAYED&mac=${mac}&vid=${vid}&chipType=${chipType}&ad_id=${ad_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VAST_INPUT_DISPLAYED",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VAST_INPUT_DISPLAYED&mac=${mac}&vid=${vid}&chipType=${chipType}&ad_id=${ad_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VAST_SUBMIT",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://115.29.201.181/wcttool/logging/addlog?event=VAST_SUBMIT&mac=${mac}&vid=${vid}&chipType=${chipType}&ad_id=${ad_id}"
+                }
+            ]
+        },
+        {
+            "event" : "VOD_PLAY_QOS",
+            "switch" : "1",
+            "targetUrls": [
+                {
+                    "url": "http://logv2.widecloud.com.cn/wcttool/logging/qos2?event=${event}&mac=${mac}&vid=${vid}&chipType=${chipType}&app=${app}&url=${url}&urlId=${urlId}&channel=${channel}&video=${video}&no=${no}&totalTime=${totalTime}&startTime=${startTime}&playTime=${playTime}&startType=${startType}&startStatus=${startStatus}&bufferNum=${bufferNum}&bufferTime=${bufferTime}&app=${app}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+package com.wct.report;
+
+=TmpAppLog,tmp_applog
+int *#id
+int org_id
+String mac
+String appName
+Date enterTime
+Date leaveTime
+long duration
+String device_ip
+String vendor_code
+String chipType
+String software_code
+String province
+String city
+String communications
+int processed
+

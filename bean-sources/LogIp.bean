@@ -1,0 +1,8 @@
+package com.wct.logs;
+
+=LogIp,log_ip
+int *#id
+String ip
+String province
+String city
+String communications
